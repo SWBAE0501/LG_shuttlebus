@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8ac6c91282dfc1aeca662cb676624920 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8ac6c91282dfc1aeca662cb676624920" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8ac6c91282dfc1aeca662cb676624920 = L.map(
+                "map_8ac6c91282dfc1aeca662cb676624920",
+                {
+                    center: [37.5665, 126.978],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_589e74e999855814a1d1cc563f9ea532 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_589e74e999855814a1d1cc563f9ea532.addTo(map_8ac6c91282dfc1aeca662cb676624920);
+        
+    
+            var marker_1d6d88b9949a08b5df2a338b958fae7e = L.marker(
+                [37.5665, 126.978],
+                {}
+            ).addTo(map_8ac6c91282dfc1aeca662cb676624920);
+        
+    
+            var icon_492cf0bfad4bf9054e67fe4d4ad5272d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1d6d88b9949a08b5df2a338b958fae7e.setIcon(icon_492cf0bfad4bf9054e67fe4d4ad5272d);
+        
+    
+        var popup_6dcd4f33a849c0cb09737a6ed9f4e5ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7babf60c39066f9b9a134b93bbbcecf9 = $(`<div id="html_7babf60c39066f9b9a134b93bbbcecf9" style="width: 100.0%; height: 100.0%;">정류장 1</div>`)[0];
+                popup_6dcd4f33a849c0cb09737a6ed9f4e5ea.setContent(html_7babf60c39066f9b9a134b93bbbcecf9);
+            
+        
+
+        marker_1d6d88b9949a08b5df2a338b958fae7e.bindPopup(popup_6dcd4f33a849c0cb09737a6ed9f4e5ea)
+        ;
+
+        
+    
+    
+            var marker_ce3def81af38f27d589b1333fe4d43c7 = L.marker(
+                [37.57, 126.982],
+                {}
+            ).addTo(map_8ac6c91282dfc1aeca662cb676624920);
+        
+    
+            var icon_4a1d1aed0b407bc0e9781033b1cf3069 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ce3def81af38f27d589b1333fe4d43c7.setIcon(icon_4a1d1aed0b407bc0e9781033b1cf3069);
+        
+    
+        var popup_19947b10b1a3e70def8c1c7e521955f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d79930dcf229c943ce65b74b0350e8fd = $(`<div id="html_d79930dcf229c943ce65b74b0350e8fd" style="width: 100.0%; height: 100.0%;">정류장 2</div>`)[0];
+                popup_19947b10b1a3e70def8c1c7e521955f2.setContent(html_d79930dcf229c943ce65b74b0350e8fd);
+            
+        
+
+        marker_ce3def81af38f27d589b1333fe4d43c7.bindPopup(popup_19947b10b1a3e70def8c1c7e521955f2)
+        ;
+
+        
+    
+    
+            var marker_fd4b1fe5bf92984a1735c330a1949650 = L.marker(
+                [37.5735, 126.986],
+                {}
+            ).addTo(map_8ac6c91282dfc1aeca662cb676624920);
+        
+    
+            var icon_b66fe27ea6648f66f921f09d07c8b917 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fd4b1fe5bf92984a1735c330a1949650.setIcon(icon_b66fe27ea6648f66f921f09d07c8b917);
+        
+    
+        var popup_5d0141c960db0d19aecd4eb2b37a40f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a974da0b1797415efbb66e33b8ca7df = $(`<div id="html_2a974da0b1797415efbb66e33b8ca7df" style="width: 100.0%; height: 100.0%;">정류장 3</div>`)[0];
+                popup_5d0141c960db0d19aecd4eb2b37a40f3.setContent(html_2a974da0b1797415efbb66e33b8ca7df);
+            
+        
+
+        marker_fd4b1fe5bf92984a1735c330a1949650.bindPopup(popup_5d0141c960db0d19aecd4eb2b37a40f3)
+        ;
+
+        
+    
+    
+            var marker_0815f424a9b15a71d3a984dfc566699f = L.marker(
+                [37.577, 126.99],
+                {}
+            ).addTo(map_8ac6c91282dfc1aeca662cb676624920);
+        
+    
+            var icon_ffaee831b3993d5af41ef6bab88332c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0815f424a9b15a71d3a984dfc566699f.setIcon(icon_ffaee831b3993d5af41ef6bab88332c1);
+        
+    
+        var popup_8f658715cf19c38a33c73a5841e58d81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0536874368e9f23b1fe3612847a82f0 = $(`<div id="html_c0536874368e9f23b1fe3612847a82f0" style="width: 100.0%; height: 100.0%;">정류장 4</div>`)[0];
+                popup_8f658715cf19c38a33c73a5841e58d81.setContent(html_c0536874368e9f23b1fe3612847a82f0);
+            
+        
+
+        marker_0815f424a9b15a71d3a984dfc566699f.bindPopup(popup_8f658715cf19c38a33c73a5841e58d81)
+        ;
+
+        
+    
+    
+            var poly_line_d57a671649f11ccbac8457c60180de11 = L.polyline(
+                [[37.5665, 126.978], [37.57, 126.982], [37.5735, 126.986], [37.577, 126.99]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_8ac6c91282dfc1aeca662cb676624920);
+        
+</script>
+</html>
